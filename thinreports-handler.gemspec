@@ -15,4 +15,13 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = ThinreportsHandler::VERSION
   gem.add_dependency "thinreports", '~>0.7.0'
+
+  gem.post_install_message = 
+    <<-MSG
+    ==========================================================================================
+
+    WARN! Sorry, this gem was rename to thinreports-rails. Please reinstall thinreports-rails.
+
+    ==========================================================================================
+    MSG
 end
